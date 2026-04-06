@@ -1,3 +1,4 @@
+/* Algemene stijl van de pagina */
 body {
     background-color: #0f1923;
     color: white;
@@ -6,25 +7,22 @@ body {
     padding: 20px;
 }
 
+/* Titel bovenaan */
 .title {
     text-align: center;
     color: #ff4655;
 }
 
-.center {
-    text-align: center;
-    color: #ff4655;
-}
-
+/* Grid van alle agent kaartjes */
 .agent-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+/* Één agent kaartje */
 .agent-card {
     background-color: #1f2933;
-    border: 1px  #ff4655;
     width: 200px;
     margin: 10px;
     padding: 15px;
@@ -38,17 +36,17 @@ body {
 
 .agent-card img {
     width: 100%;
-    border-radius: 4px;
 }
 
+/* Bekijk info link */
 .agent-card a {
     color: #ff4655;
     text-decoration: none;
-    font-weight: bold;
     display: block;
     margin-top: 10px;
 }
 
+/* Zoekbalk */
 .search-box {
     text-align: center;
     margin-bottom: 30px;
@@ -63,27 +61,51 @@ body {
     border-radius: 20px;
 }
 
-.detail-box {
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #1f2933;
-    padding: 20px;
-    border-radius: 10px;
-    border-left: 5px solid #ff4655;
-}
-
-.detail-image {
-    width: 250px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+/* Balk bovenaan met favoriete agents */
+.favorites-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
     margin-bottom: 20px;
 }
 
-.back-button {
-    color: #ece8e1;
-    text-decoration: none;
-    display: inline-block;
-    margin-bottom: 20px;
+/* Klein icoontje per favoriet */
+.favorites-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #ff4655;
+}
+
+/* Favoriet knop op elk kaartje */
+.favorite-button {
+    background-color: transparent;
+    border: 1px solid #ff4655;
+    color: #ff4655;
+    border-radius: 20px;
+    padding: 4px 12px;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
+}
+
+.favorite-button:hover {
+    background-color: #ff4655;
+    color: white;
+}
+
+/* Refresh knop rechtsboven */
+.refresh-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ff4655;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
 }
