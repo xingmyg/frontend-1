@@ -2,8 +2,7 @@ import {PieChart, Pie, Cell, Legend} from 'recharts';
 import './Comp.css';
 
 // Kleuren per stuk van de chart
-const COLORS = ['#bd3944', '#ff8c00', '#00c8ff', '#7E24D6' +
-''];
+const COLORS = ['#bd3944', '#ff8c00', '#00c8ff', '#7E24D6'];
 
 function RoleChart({agents}) {
 
@@ -46,7 +45,6 @@ function RoleChart({agents}) {
                     {data.map((entry, index) => (
                         <Cell key={entry.name} fill={COLORS[index]}/>
                     ))}
-
                 </Pie>
 
                 {/* Legenda onderaan */}

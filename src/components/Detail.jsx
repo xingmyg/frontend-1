@@ -13,12 +13,12 @@ function Detail() {
     useEffect(() => {
         fetch(`https://valorant-api.com/v1/agents/${id}`)
             .then(response => response.json())
-            .then(data => setChosenAgent(data.data));
+            .then(list => setChosenAgent(list.data));
     }, [id]);
 
     // Aan het laden, laat dit zien
     if (chosenAgent == null) {
-        return <h2 className="center">Bezig met zoeken</h2>;
+        return <h2 className="center">Searching</h2>;
     }
 
     // Geen rol, dan "No role"
@@ -31,12 +31,12 @@ function Detail() {
         <div className="detail-box">
 
             {/* Terug knop */}
-            <Link to="/" className="back-button"><FaArrowAltCircleLeft/> Terug naar overzicht</Link>
+            <Link to="/" className="back-button"><FaArrowAltCircleLeft/> Back to overview</Link>
             <h1>{chosenAgent.displayName}</h1>
             <img src={chosenAgent.displayIcon} className="detail-image" alt="Agent image"/>
-            <h3>Biografie</h3>
+            <h3>Biography</h3>
             <p>{chosenAgent.description}</p>
-            <p><strong>Rol:</strong> {roleName}</p>
+            <p><strong>Role:</strong> {roleName}</p>
         </div>
     );
 }
