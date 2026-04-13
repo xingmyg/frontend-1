@@ -10,20 +10,6 @@
     justify-content: center;
 }
 
-/* Refresh knop rechtsboven */
-.refresh-button {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: #ff4655;
-    border: none;
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    font-size: 22px;
-    color: white;
-    cursor: pointer;
-}
 
 .agent-card {
     background-color: #1f2933;
