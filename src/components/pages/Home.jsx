@@ -1,10 +1,10 @@
 import {useEffect, useState} from 'react';
 import {TbBrandValorant} from "react-icons/tb";
-import RoleChart from './RoleChart';
-import SearchBar from './SearchAgent';
-import FavoritesBar from './Favorite';
-import AgentCard from './AgentsCard';
-import './Comp.css';
+import RoleChart from '../RoleChart.jsx';
+import SearchBar from '../SearchAgent.jsx';
+import FavoritesBar from '../Favorite.jsx';
+import AgentCard from '../AgentsCard.jsx';
+import '../Comp.css';
 
 function Home() {
 
