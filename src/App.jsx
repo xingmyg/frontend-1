@@ -1,6 +1,6 @@
 import {Routes, Route} from 'react-router';
-import Home from './components/pages/Home.jsx';
-import Detail from './components/pages/Detail.jsx';
+import Home from './pages/Home.jsx';
+import Detail from './pages/Detail.jsx';
 import './App.css';
 
 // Andere bestanden mogen dit gebruiken

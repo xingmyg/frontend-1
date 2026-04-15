@@ -1,7 +1,7 @@
 import {useParams, Link} from 'react-router';
 import {useEffect, useState} from 'react';
 import {FaArrowAltCircleLeft} from "react-icons/fa";
-import '../Comp.css';
+import '../components/Comp.css';
 
 function Detail() {
 
